@@ -48,7 +48,7 @@
 </div>
 
 <div id="nav">
-<table border="1">
+<table border="4">
   <tr><th>
 <h2 style="font-family:impact;"><ins>Helpful Links:</ins></h2>
 <br>
@@ -237,46 +237,6 @@ This can usually be done by holding down the little peg next to the display.</h3
 <p><img src="trip_meter_pic.png" width="330" height="200"></p>
 </p>
 
-<script>
-function calc(form) {
-
-var D = "0";
-var A = document.getElementById("num1").value;
-var B = document.getElementById("op").value;
-var C = document.getElementById("num2").value;
-
-if (B === "+")
-{
-D = parseInt(A)+parseInt(C); 
-}
-else if(B === "-")
-{
-D = parseInt(A)-parseInt(C);
-}
-else if(B === "*")
-{
-D = parseInt(A)*parseInt(C);
-}
-else if (B === "/")
-{
-D = parseInt(A)/parseInt(C);
-}
-document.getElementById("result").innerHTML = D;
-return false;
-}
-</script>
-<body>
-
-<input type="text" id="num1" name="num1" />
-<input type="text" id="op" name="op" />
-<input type="text" id="num2" name="num2" />
-<br />
-<input type="button" value="Solve" onClick="calc(this)">
-
-<p id="result" name="r1">
-<br />
-</p>
-
 <p>
 <img src="step2.jpg" width="170" height="38"><br>
 <h3><ins>When your gas light comes on</ins>, stop at the next gas station and <ins>fill up</ins> your tank again.
@@ -289,6 +249,7 @@ return false;
 function calc(form) {
 
 var D = "0";
+test
 var A = document.getElementById("num1").value;
 var B = document.getElementById("op").value;
 var C = document.getElementById("num2").value;
