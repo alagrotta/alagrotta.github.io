@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<title>Use this website to calculate how many miles are left remaining after the gas light in your car comes on</title>
+<title>Welcome to MilesAfterGasLight.com! Use this website to calculate how many miles are left remaining after the gas light in your car comes on</title>
 </head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -261,7 +261,7 @@ This can usually be done by holding down the little peg next to the display.</h3
 </p>
 
 <script>
-function calc(form) {
+function test(from) {
 
 var D = "0";
 var A = document.getElementById("num1").value;
@@ -284,7 +284,7 @@ else if (B === "/")
 {
 D = parseInt(A)/parseInt(C);
 }
-document.getElementById("result").innerHTML = D;
+document.getElementById("results").innerHTML = D;
 return false;
 }
 </script>
@@ -294,9 +294,9 @@ return false;
 <input type="text" id="op" name="op" />
 <input type="text" id="num2" name="num2" />
 <br/>
-<input type="button" value="Solve" onClick="calc(this)">
+<input type="button" value="Solve" onClick="test(this)">
 
-<p id="result" name="r1">
+<p id="results" name="r1">
 <br/>
 </p>
 
@@ -308,41 +308,40 @@ Multiply the <ins>MPG</ins> found in step 2 times the difference in your <ins>ta
 <script>
 function calc(form) {
 
-var D = "0";
-var A = document.getElementById("num1").value;
-var B = document.getElementById("op").value;
-var C = document.getElementById("num2").value;
+var H = "zero";
+var E = document.getElementById("num3").value;
+var F = document.getElementById("op2").value;
+var G = document.getElementById("num4").value;
 
-if (B === "+")
+if (E === "+")
 {
-D = parseInt(A)+parseInt(C); 
+H = parseInt(E)+parseInt(G); 
 }
-else if(B === "-")
+else if(F === "-")
 {
-D = parseInt(A)-parseInt(C);
+H = parseInt(E)-parseInt(G);
 }
-else if(B === "*")
+else if(F === "*")
 {
-D = parseInt(A)*parseInt(C);
+H = parseInt(E)*parseInt(G);
 }
-else if (B === "/")
+else if (F === "/")
 {
-D = parseInt(A)/parseInt(C);
+H = parseInt(E)/parseInt(G);
 }
-document.getElementById("result").innerHTML = D;
+document.getElementById("result").innerHTML = H;
 return false;
 }
 </script>
-<body>
-
 1st Number:<span style="color:white">...............</span>Operation (+ - * or /):<span style="color:white">...............</span>2nd Number:<p>
-<input type="text" id="num1" name="num1" />
-<input type="text" id="op" name="op" />
-<input type="text" id="num2" name="num2" />
+<body>
+<input type="text" id="num3" name="num4" />
+<input type="text" id="op2" name="op2" />
+<input type="text" id="num4" name="num4" />
 <br/>
 <input type="button" value="Solve" onClick="calc(this)">
 
-<p id="results" name="r1">
+<p id="result" name="r1">
 <br/>
 </p>
 <h6><span style="color:white"> How far can car drive once gas like comes on </span></h6>
