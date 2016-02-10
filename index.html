@@ -119,6 +119,57 @@ Aside{
 <br>
 <br>
 <br>
+<a href="index.html">Return to Homepage</a>
+<h1 style="text-size:100%"> </h1>
+<a href='calculator.html' target="_blank">Click for Calculator</a><br>
+<h1 style="text-size:100%"> </h1>
+<a href='results.html' target="_blank">Find Your Car's Results</a><br>
+<h1 style="text-size:100%"> </h1>
+<a href='about.html' target="_blank">About Our Site</a><br>
+<h1 style="text-size:100%"> </h1>
+<a href="http://www.123contactform.com/form-1751717/Post-Your-Results" ><img border="0" src="post_your_results.png"></a>
+<br>
+<a href="http://www.123contactform.com/form-1751583/Contact-Lead-Form" ><img border="0" src="http://dflzqrzibliy5.cloudfront.net/images3/contactbutton.gif"></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -177,12 +228,6 @@ Aside{
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <a href="index.html">Return to Homepage</a>
 <h1 style="text-size:100%"> </h1>
 <a href='calculator.html' target="_blank">Click for Calculator</a><br>
@@ -194,53 +239,6 @@ Aside{
 <a href="http://www.123contactform.com/form-1751717/Post-Your-Results" ><img border="0" src="post_your_results.png"></a>
 <br>
 <a href="http://www.123contactform.com/form-1751583/Contact-Lead-Form" ><img border="0" src="http://dflzqrzibliy5.cloudfront.net/images3/contactbutton.gif"></a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </th></tr>
 </table>
 </div>
@@ -268,44 +266,46 @@ This can usually be done by holding down the little peg next to the display.</h3
 </p>
 
 <script>
-function test(from) {
-
-var D = "0";
-var A = document.getElementById("num1").value;
-var B = document.getElementById("op").value;
-var C = document.getElementById("num2").value;
-
-if (B === "+")
-{
-D = parseInt(A)+parseInt(C); 
+function calc(form) {
+var mpgcalc = (form.milesDriven.value / form.gallons.value) * 1;
+mpgcalc = twoDecs(mpgcalc);
+form.mpg.value = mpgcalc;
 }
-else if(B === "-")
-{
-D = parseInt(A)-parseInt(C);
-}
-else if(B === "*")
-{
-D = parseInt(A)*parseInt(C);
-}
-else if (B === "/")
-{
-D = parseInt(A)/parseInt(C);
-}
-document.getElementById("results").innerHTML = D;
-return false;
+function twoDecs(item) {
+return eval(parseInt(item * 100) * .01);
 }
 </script>
-1st Number:<span style="color:white">...............</span>Operation (+ - * or /):<span style="color:white">...............</span>2nd Number:<p>
-<body>
-<input type="text" id="num1" name="num1" />
-<input type="text" id="op" name="op" />
-<input type="text" id="num2" name="num2" />
-<br/>
-<input type="button" value="Solve" onClick="test(this)">
 
-<p id="results" name="r1">
-<br/>
-</p>
+<center>
+
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link href="/print.css" rel="stylesheet" type="text/css"  media="print">
+
+    <form>
+      <div><table border="2">
+        <tr>
+          <td>Miles Since Last Fill-Up: </td>
+          <td><input type="text" name="milesDriven" size="7"> (miles)</td>
+        </tr>
+        <tr>
+          <td>Gallons Filled at Station: </td>
+          <td><input type="text" name="gallons" size="7"> (gal)</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><input type="button" value="Calculate!" onClick="calc(this.form)"></td>
+        </tr>
+        <tr>
+          <td>Ans: <input type="text" name="mpg" size="7"></td>
+          <td>Miles Per Gallon (mpg)</td>
+        </tr>
+          <td colspan="2" align="center"><input type="reset"></td>
+        </tr>
+      </table>
+	</div>
+    </form>
+
+<br>
+<br>
 
 <img src="step3.jpg" width="170" height="38"><br>
 <h3>Lastly, locate your car's <ins>tank capacity</ins> found in your owners manual, usually kept in the glove box.
@@ -313,45 +313,49 @@ Multiply the <ins>MPG</ins> found in step 2 times the difference in your <ins>ta
 <p><img src="step_3_equation.jpg" width="400" height="150"></p><p><img src="end_result.jpg" width="400" height="150"></p>
 
 <script>
-function calc(form) {
-
-var H = "zero";
-var E = document.getElementById("num3").value;
-var F = document.getElementById("op2").value;
-var G = document.getElementById("num4").value;
-
-if (E === "+")
-{
-H = parseInt(E)+parseInt(G); 
+function compute(form) {
+var milesremaining = ((form.tankcapacity.value * 1) - form.gallonsfilled.value) * form.mpg2.value;
+milesremaining = twoDecs(milesremaining);
+form.result.value = milesremaining;
 }
-else if(F === "-")
-{
-H = parseInt(E)-parseInt(G);
-}
-else if(F === "*")
-{
-H = parseInt(E)*parseInt(G);
-}
-else if (F === "/")
-{
-H = parseInt(E)/parseInt(G);
-}
-document.getElementById("result").innerHTML = H;
-return false;
+function twoDecs(item) {
+return eval(parseInt(item * 100) * .01);
 }
 </script>
-1st Number:<span style="color:white">...............</span>Operation (+ - * or /):<span style="color:white">...............</span>2nd Number:<p>
-<body>
-<input type="text" id="num3" name="num4" />
-<input type="text" id="op2" name="op2" />
-<input type="text" id="num4" name="num4" />
-<br/>
-<input type="button" value="Solve" onClick="calc(this)">
 
-<p id="result" name="r1">
-<br/>
-</p>
-<h6><span style="color:white"> How far can car drive once gas like comes on </span></h6>
+<center>
+
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link href="/print.css" rel="stylesheet" type="text/css"  media="print">
+
+    <form>
+      <div><table border="2">
+        <tr>
+          <td>MPG <i>from step #2: </i></td>
+          <td><input type="text" name="mpg2" size="7"> (miles/gal)</td>
+        </tr>
+		<tr>
+          <td>Tank Capacity: </td>
+          <td><input type="text" name="tankcapacity" size="7"> (gal)</td>
+        </tr>
+        <tr>
+          <td>Gallons Filled at Station: </td>
+          <td><input type="text" name="gallonsfilled" size="7"> (gal)</td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><input type="button" value="Calculate!" onClick="compute(this.form)"></td>
+        </tr>
+        <tr>
+          <td>Ans: <input type="text" name="result" size="7"></td>
+          <td><b>Miles After Gas Light!</b></td>
+        </tr>
+          <td colspan="2" align="center"><input type="reset"></td>
+        </tr>
+      </table>
+	</div>
+    </form>
+
+<br>
 <table class="lamp">
 <tr>
   <th>
@@ -366,7 +370,7 @@ return false;
 </div>
 
 <div id="aside">
-<small>Last updated Mon Feb 8 2016 21:17 EST</small>
+<small>Last updated Tu Feb 9 2016 20:28 EST</small>
 </div>
 
 <div id="footer">
