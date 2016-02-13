@@ -314,7 +314,7 @@ Multiply the <ins>MPG</ins> found in step 2 times the difference in your <ins>ta
 
 <script>
 function compute(form) {
-var milesremaining = ((form.tankcapacity.value * 1) - form.gallonsfilled.value) * form.mpg2.value;
+var milesremaining = ((form.tankcapacity.value * 1) - form.gallonsFilled.value) * form.mpg2.value;
 milesremaining = twoDecs(milesremaining);
 form.result.value = milesremaining;
 }
@@ -340,7 +340,7 @@ return eval(parseInt(item * 100) * .01);
         </tr>
         <tr>
           <td>Gallons Filled at Station: </td>
-          <td><input type="text" name="gallonsfilled" size="7"> (gal)</td>
+          <td><input type="text" name="gallonsFilled" size="7"> (gal)</td>
         </tr>
         <tr>
           <td colspan="2" align="center"><input type="button" value="Calculate!" onClick="compute(this.form)"></td>
