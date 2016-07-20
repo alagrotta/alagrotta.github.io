@@ -1,30 +1,11 @@
 body {
-    background-color: white;
+    background-color: lightblue;
 }
 
-header {
-    background-color: #4c4c4c;
-    color:white;
-    text-align:right;
-    padding:5px;
-}
-
-nav {
-    background-color: #4c4c4c;
-    line-height:10px;
-    height:2099px;
-    width:213px;
-    float:left;
-    padding:5px;
-	text-align:left;
-}
-
-<style>
-#footer {
+footer {
     background-color:white;
     color:white;
     clear:both;
-    text-align:center;
+    text-align:left;
    padding:1px;	 	 
 }
-</style>
