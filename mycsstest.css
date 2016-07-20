@@ -1,12 +1,10 @@
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
-}
-
-images {
-	max-width: 100%;
+#header {
+    background-color: #FAEBD7;
+    color:white;
+    text-align:right;
+    padding:5px;
 }
