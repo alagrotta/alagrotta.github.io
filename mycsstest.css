@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: lightblue;
 }
 
 header {
@@ -8,3 +8,14 @@ header {
     text-align:right;
     padding:5px;
 }
+
+nav {
+    background-color: #4c4c4c;
+    line-height:10px;
+    height:2099px;
+    width:213px;
+    float:left;
+    padding:5px;
+	text-align:left;
+}
+
