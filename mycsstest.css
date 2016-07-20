@@ -1,5 +1,12 @@
 body {
+    background-color: white;
+}
+
+#header {
     background-color: lightblue;
+    color:black;
+    text-align:right;
+    padding:5px;
 }
 
 #footer {
