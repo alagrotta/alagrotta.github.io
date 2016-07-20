@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 
 header {
@@ -19,3 +19,12 @@ nav {
 	text-align:left;
 }
 
+<style>
+#footer {
+    background-color:white;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:1px;	 	 
+}
+</style>
