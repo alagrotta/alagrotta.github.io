@@ -1,16 +1,37 @@
 body {
-    background-color: white;
+    background-color: #FAEBD7;
 }
-
 #header {
     background-color: lightblue;
     color:black;
     text-align:right;
     padding:5px;
 }
-
+#nav {
+    background-color: lightblue;
+    line-height:10px;
+    height:2099px;
+    width:213px;
+    float:left;
+    padding:5px;
+	text-align:left;
+}
+#section {
+    background-color: lightblue;
+    width:1090px;
+    float:left;
+    padding:10px;	 
+	text-align:center;	
+}
+#aside {
+    background-color: lightblue;
+    width:150px;
+	height: 1000px;
+    float:center;
+    padding:10px;	 	 
+}
 #footer {
-    background-color:lightblue;
+    background-color: lightblue;
     color:white;
     clear:both;
     text-align:center;
