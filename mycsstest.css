@@ -5,12 +5,12 @@ body {
     background-color: #FAEBD7;
     color:black;
     text-align:right;
-    padding:5px;
+    padding:8px;
 	width:350px;
 }
 #nav {
     background-color: #FAEBD7;
-    line-height:16px;
+    line-height:16.5px;
     height:2099;
     width:350px;
     float:left;
