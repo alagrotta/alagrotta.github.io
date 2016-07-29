@@ -10,7 +10,7 @@ body {
 #nav {
     background-color: #FAEBD7;
     line-height:10px;
-    height:2099px;
+    height:3000px;
     width:213px;
     float:left;
     padding:5px;
@@ -18,7 +18,7 @@ body {
 }
 #section {
     background-color: #FAEBD7;
-    width:500px;
+    width:460px;
     float:left;
     padding:10px;	 
 	text-align:center;	
