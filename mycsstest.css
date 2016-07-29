@@ -4,9 +4,9 @@ body {
 #header {
     background-color: #FAEBD7;
     color:black;
-    text-align:right;
+    text-align:left;
     padding:5px;
-	width:400px;
+	width:450px;
 }
 #nav {
     background-color: #FAEBD7;
