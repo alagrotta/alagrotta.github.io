@@ -25,9 +25,9 @@ body {
 	text-align:center;
 }
 #footer {
-    background-color: black;
+    background-color:black;
     color:white;
     clear:both;
     text-align:center;
-    padding:1px;	 	 
+    height:50px;
 }
