@@ -6,11 +6,11 @@ body {
     color:black;
     text-align:left;
     padding:20px;
-	width:450px;
+	width:475px;
 }
 #nav {
     background-color: #FAEBD7;
-    line-height:14px;
+    line-height:15px;
     height:2099;
     width:350px;
     float:left;
@@ -19,7 +19,7 @@ body {
 }
 #section {
     background-color: #FAEBD7;
-    max-width:700px;
+    max-width:725px;
     float:left;
     padding:10px;	 
 	text-align:center;
