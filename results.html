@@ -7,7 +7,7 @@
 <title>Search for your car here to see how many miles are left remaining after the gas light turns on</title>
 </head>
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="icon.jpg" />
+<link rel="shortcut icon" type="image/x-icon" href="icon_transparent.png" />
 </head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,26 +19,32 @@
   ga('send', 'pageview');
 </script>
 <style>
+body {
+    background-color: #FAEBD7;
+}
 #header {
     background-color: #4c4c4c ;
     color:white;
     text-align:center;
-    padding:5px;
+    padding:0.1px;
 	font-family:impact;
 }
 #nav {
+    background-color: #FAEBD7;
     line-height:10px;
     height:300px;
     width:220px;
     float:left;
-    padding:10px;
+    padding:8px;
 	text-align:left;		
 }
 #section {
-    width:810px;
+    background-color: #FAEBD7;
+    line-height:15px;
+    width:1000px;
     float:left;
-    padding:10px;	 
-	text-align:right;	
+    padding:30px;	 
+	text-align:center;	
 }
 #footer {
     background-color:black;
@@ -52,12 +58,14 @@
 <body>
 
 <div id="header">
-<h1><h1 style="font-size:200%"><ins>MilesAfterGasLight.com</ins></h1></h1>
+<h1><h1 style="font-size:175%"><ins>MilesAfterGasLight.com</ins></h1></h1>
 <a href="http://www.milesaftergaslight.com/">
-  <img src="low_fuel.jpg" style="width:175px;height:175px;border:0" target="_blank">
+  <img src="low_fuel.jpg" style="width:155;height:155px;border:1" target="_blank">
 </a>
-  <h2><h2 style="font-family:ariel;">Search for your car's results here!</h2></h2>
+  <h3><h3 style="font-family:ariel;">Search for your car's results here! Or click the logo above to return to the Homepage</h3></h3>
 </div>
+
+<span style="float:right"><small><i>Last updated Sat Jan 26 2019 11:54 EST</i></small></span>
 
 <div id="nav">
 
@@ -84,14 +92,17 @@ li a:hover {
 table {
     background-color: #ffc266;
 	border-style: ridge;
+	-webkit-box-shadow: #B3B3B3 4px 4px 4px;
+	-moz-box-shadow:    #B3B3B3 4px 4px 4px;
+	box-shadow:         #B3B3B3 4px 4px 4px;
 }
 </style>
 </head>
 <body>
 
-<table>
+<table border="4">
   <tr><th>
-<h2 style="font-family:impact;"><ins>Helpful Links:</ins></h2>
+<h2 style="font-family:impact;"><center><ins>Helpful Links:</ins></h2>
 <h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
@@ -100,9 +111,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -110,9 +133,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -120,9 +155,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -130,9 +177,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -140,9 +199,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -150,9 +221,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -160,9 +243,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -170,9 +265,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -180,9 +287,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -190,9 +309,21 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h5><i><center>Click below for useful resources</i></h5>
   <ul>
   <li><a href="index.html">Return to Homepage</a></a></li>
   <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
@@ -200,24 +331,25 @@ table {
    <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
   <li><a href='about.html' target="_blank">About Our Website</a></a></li>
   <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h5><i><center>Help contribute to the site here:</i></h5>
+  <center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
   </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <ul>
-  <li><a href="index.html">Return to Homepage</a></a></li>
-  <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
-  <li><a href='results.html' target="_blank">Find Your Car's Results</a></a></li>
-   <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
-  <li><a href='about.html' target="_blank">About Our Website</a></a></li>
-  <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
-  </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 </th></tr>
 </table>
 </div>
 
 <div id="section">
-<table style="width:130%">
+<table style="width:100%">
 <tr>
   <th>
      <img src="lamp.jpg" alt="Note" style="height:32px;width:32px">
@@ -234,9 +366,24 @@ table {
 <big><i>Search for your car's make: </i><b><a href="#a-b">A-B</a> | <a href="#c">C</a> | <a href="#d-f">D-F</a> | <a href="#g-h">G-H</a> | <a href="#i-k">I-K</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n-o">N-O</a> | <a href="#p">P</a> | <a href="#s">S</a> | <a href="#t-v">T-V</a></b>
 </big>
 
+<p>
+Below is a series of tabulated results for common car makes and models, based off of average inputs from users and online research.
+If you are looking for a quick result, feel free to browse these tables below.
+Once more data become available, these tables will include a breakdown by year as well.
+</p>
+<p>
+If you're looking for a more accurate representation for your exact car, visit our <a href="index.html">homepage</a>, 
+where you can enter the specific numbers for your car, and our calculators will automatically determine a best guess for
+the number of miles remaining when your car's gas light comes on! 
+</p>
+<p>
+Click <a href="index.html">here</a> to return to our homepage to calculate the results for your specific car
+<br>
+Click <a href="https://www.paypal.com/donate/?token=rALFc89GV-0XgSElt-zWd619VCTAb5wc2vXNG8Upk59pVvHioEEpunqXa_wQDYau2kUGzm&country.x=US&locale.x=US">here</a> if you'd like to donate to help support the site and keep it running
+
 <h6 id="a-b"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Acura</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>CL</th>
@@ -262,7 +409,7 @@ table {
 <br>
 
 </style>
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Audi</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>A3</th>
@@ -295,7 +442,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>BMW</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>3-Series</th>
@@ -326,20 +473,15 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Buick</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Allure</th>
     <th>Century</th>
     <th>Enclave</th>
-    <th>LaCrosse</th>
+    <th>Lacrosse</th>
     <th>Lucerne</th>
     <th>Rainier</th>
-    <th>Regal</th>
-    <th>Rendezvous</th>
-    <th>Riviera</th>
-	<th>Roadmater</th>
-	<th>Skylark</th>
   </tr>
   <tr>
     <td><ins><b><h3>Miles Remaining:</h3></ins></b></td>
@@ -349,6 +491,22 @@ table {
     <th>36</th>
     <th>44</th>
     <th>30</th>
+  </tr>
+</table>
+
+<br>
+
+<table style="width:100%">
+    <th rowspan="3"><h2>Buick (continued)</th></h1>
+    <td><ins><b><h3>Model:</h3></ins></b></td>
+    <th>Regal</th>
+    <th>Rendezvous</th>
+    <th>Riviera</th>
+	<th>RoadMaster</th>
+	<th>Skylark</th>
+  </tr>
+  <tr>
+    <td><ins><b><h3>Miles Remaining:</h3></ins></b></td>
     <th>36</th>
     <th>29</th>
     <th>25</th>
@@ -357,9 +515,9 @@ table {
   </tr>
 </table>
 
-<br><h6 id="c"> </h2>
+<h6 id="c"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Cadillac</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Catera</th>
@@ -388,7 +546,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Chevrolet</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Avalance</th>
@@ -400,8 +558,6 @@ table {
     <th>Cobalt</th>
     <th>Colorado</th>
     <th>Corvette</th>
-	<th>Cruze</th>
-    <th>Equinox</th>
   </tr>
   <tr>
     <td><ins><b><h3>Miles Remaining:</h3></ins></b></td>
@@ -414,14 +570,12 @@ table {
     <th>32</th>
     <th>44</th>
     <th>36</th>
-	<th>40</th>
-    <th>34</th>
   </tr>
 </table>
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Chevrolet<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Impala</th>
@@ -431,7 +585,9 @@ table {
     <th>Silverado</th>
     <th>Suburban</th>
     <th>Tahoe</th>
-    <th>Trailblazer</th>
+    <th>Trail Blazer</th>
+	<th>Cruze</th>
+    <th>Equinox</th>
   </tr>
   <tr>
     <td><ins><b><h3>Miles Remaining:</h3></ins></b></td>
@@ -443,12 +599,14 @@ table {
     <th>34</th>
     <th>44</th>
     <th>28</th>
+	<th>40</th>
+    <th>34</th>
   </tr>
 </table>
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Chrysler</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>200</th>
@@ -481,7 +639,7 @@ table {
 
 <br><h6 id="d-f"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Dodge</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Avenger</th>
@@ -512,7 +670,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Dodge<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Magnum</th>
@@ -535,7 +693,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Fiat</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>500</th>
@@ -558,7 +716,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Ford</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Contour</th>
@@ -591,7 +749,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Ford<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Focus</th>
@@ -622,7 +780,7 @@ table {
 
 <br><h6 id="g-h"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>GMC</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Acadia</th>
@@ -657,7 +815,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Honda</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Accord</th>
@@ -690,7 +848,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Honda<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>HR-V</th>
@@ -717,7 +875,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Hyundai</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Accent</th>
@@ -750,7 +908,7 @@ table {
 
 <br><h6 id="i-k"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Infinity</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>FX35</th>
@@ -783,7 +941,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Jaguar</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>S</th>
@@ -808,7 +966,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Jeep</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Cherokee</th>
@@ -835,7 +993,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Kia</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Amandti</th>
@@ -872,7 +1030,7 @@ table {
 
 <br><h6 id="l"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Land Rover</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Discovery</th>
@@ -893,7 +1051,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Lexus</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>ES 300</th>
@@ -926,7 +1084,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Lexus<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>LX 400</th>
@@ -959,7 +1117,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Lincoln</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Aviator</th>
@@ -992,7 +1150,7 @@ table {
 
 <br><h6 id="m"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Mazda</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>2</th>
@@ -1025,7 +1183,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Mazda<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Millenia</th>
@@ -1052,7 +1210,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Mercedes<p>Bens</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>300SD</th>
@@ -1091,7 +1249,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Mercury</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Grand Marquis</th>
@@ -1124,7 +1282,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Mitsubishi</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>3000GT</th>
@@ -1157,7 +1315,7 @@ table {
 
 <br><h6 id="n-o"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Nissan</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>200/240SX</th>
@@ -1190,7 +1348,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Nissan<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Primera</th>
@@ -1219,7 +1377,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Oldsmobile</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>88</th>
@@ -1252,7 +1410,7 @@ table {
 
 <br><h6 id="p"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Plymouth</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Acclaim</th>
@@ -1275,7 +1433,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Pontiac</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>6000</th>
@@ -1312,7 +1470,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Porsche</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>911</th>
@@ -1335,7 +1493,7 @@ table {
 
 <br><h6 id="s"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Saab</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>9-2X</th>
@@ -1360,7 +1518,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Saturn</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Coupe</th>
@@ -1395,7 +1553,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Scion</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>FRS</th>
@@ -1422,7 +1580,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Subaru</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Baja</th>
@@ -1453,7 +1611,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Suzuki</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Aerio</th>
@@ -1486,7 +1644,7 @@ table {
 
 <br><h6 id="t-v"> </h2>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Toyota</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>4 Runner</th>
@@ -1521,7 +1679,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Toyota<p>(continued)</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Matrix</th>
@@ -1556,7 +1714,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Volkswagen</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>Beetle</th>
@@ -1589,7 +1747,7 @@ table {
 
 <br>
 
-<table style="width:130%">
+<table style="width:100%">
     <th rowspan="3"><h2>Volvo</th></h1>
     <td><ins><b><h3>Model:</h3></ins></b></td>
     <th>240</th>
@@ -1628,7 +1786,7 @@ table, th, td {
 }
 th, td {
     padding: 2px;
-    text-align: center;
+    text-align: left;
 }
 table#t01 {
     width: 100%;
