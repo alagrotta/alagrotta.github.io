@@ -5,19 +5,11 @@ body {
     background-color: #FAEBD7;
     color:black;
     text-align:right;
-}
-#nav {
-    background-color: #FAEBD7;
-    line-height:15px;
-    height:2099px;
-    width:350px;
-    float:left;
-    padding:5px;
-	text-align:left;
+	padding:5px;
 }
 #section {
     background-color: #FAEBD7;
-    max-width:735px;
+    max-width:1400px;
     float:left;
     padding:10px;	 
 	text-align:center;
