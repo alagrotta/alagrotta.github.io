@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=0.20">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="Description" content="Use this website to calculate how many miles are left remaining and how far your car can go after the gas or fuel light in your car comes on. Just plug in a few numbers and we'll calculate it!">
 <meta name="keywords" content="miles, remaining, gallons, after, gas, fuel, light, distance">
 <head>
@@ -44,19 +44,11 @@ body {
     text-align:right;
     padding:5px;
 }
-#nav {
-    background-color: #FAEBD7;
-    line-height:10px;
-    width:213px;
-    float:left;
-    padding:5px;
-	text-align:left;
-}
 #section {
     background-color: #FAEBD7;
     float:center;
-    padding:10px;	 
-	text-align:center;	
+    padding:15px;
+	text-align:center;
 }
 #footer {
     background-color:black;
@@ -73,141 +65,156 @@ body {
 <link rel="stylesheet" type="text/css"
   media="screen and (max-device-width: 480px)"
   href="mycsstest.css" />
-<center><a href="http://www.milesaftergaslight.com/"><img src="newlogo_v2.jpg" style="width:1310px;height:300px;border:0" target="_blank"></a></center>
-<small><i>Last updated Sat June 15 2019 13:29 EST</i></small><span style="color:AntiqueWhite">....</span>
+<center><a href="http://www.milesaftergaslight.com/"><img src="newlogo_v2.jpg" style="width:99%;height:300px;border:0" target="_blank"></a></center>
+<small><i>Last updated Mon July 8 2019 19:07 EST</i></small><span style="color:AntiqueWhite">....</span>
 </div>
 
-<div id="nav">
+<div id="section">
 
 <head>
 <style>
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #ffc266;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: #333;
+  font-size: 13px;
+  font-family: Lucida Sans Unicode;
+  line-height:12px;
 }
 
-li a {
-    display: block;
-    color: #000;
-    padding: 13px 0 8px 16px;
-    text-decoration: underline;
+li {
+  float: left;
 }
 
-li a:hover {
-    background-color: #555;
-    color: white;
+li {
+  border: 2px solid #bbb;
+  border-style: ridge;
 }
-table {
-    background-color: #ffc266;
-	border-style: ridge;
-	-webkit-box-shadow: #B3B3B3 4px 4px 4px;
-	-moz-box-shadow:    #B3B3B3 4px 4px 4px;
-	box-shadow:         #B3B3B3 4px 4px 4px;
+
+li:last-child {
+  border: none;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #4CAF50;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+li.dropdown {
+  display: inline-block;
+  background-color: #4c4c4c;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d3d3d3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: underline;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.active {
+  background-color: #4CAF50;
+  text-shadow: 1px 1px #f1f1f1;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.unactive {
+  background-color: #4c4c4c;
 }
 </style>
 </head>
 <body>
 
-<table border="4">
-  <tr><th>
-<h2 style="font-family:impact;"><center><ins>Helpful Links:</ins></h2>
-<h5><i><center>Click below for useful resources</i></h5>
-  <ul>
-  <li><a href="index.html">Return to Homepage</a></a></li>
-  <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
-  <li><a href='results.html' target="_blank">Find Your Car's Results</a></a></li>
-   <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
-  <li><a href='about.html' target="_blank">About Our Website</a></a></li>
-  <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h5><i><center>Help contribute to the site here:</i></h5>
-  <center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<ul>
+  <li><a class="active" href="http://www.milesaftergaslight.com/">Homepage</a></li>
+  <li><a class="unactive" href="http://www.milesaftergaslight.com/results">Results Database</a></li>
+  <li><a class="unactive" href="http://www.123formbuilder.com/form-1751717/Post-Your-Results">Submit Your Results</a></li>
+  <li><a class="unactive" href="http://www.milesaftergaslight.com/about">About the Site</a></li>
+  <li><a class="unactive" href="http://www.123formbuilder.com/form-1751583/MilesAfterGasLightcom-Contact-Us">Contact Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Useful Links &#9660;</a>
+    <div class="dropdown-content">
+      <a href="http://www.milesaftergaslight.com/calculator">Calculator</a>
+      <a href="https://www.paypal.com/donate/?token=rALFc89GV-0XgSElt-zWd619VCTAb5wc2vXNG8Upk59pVvHioEEpunqXa_wQDYau2kUGzm&country.x=US&locale.x=US">Donate to the Site</a>
+	  <a href="http://www.milesaftergaslight.com/results">Find Your Car's Results</a>
+	</div>
+  </li>
+  <li style="float:right"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</center>
-  </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</form></li>
+</ul>
+
+</body>
+
+<br><br><br><br>
+
+<p><b><style="font-family:arial;"><span style="color:Black"><font size="5">Wondering how many miles your car can go after the gas light comes on?</font></style></b></p>
+<p><b><style="font-family:arial;"><span style="color:Black"><font size="5">Follow these <ins><span style="color:green">three simple steps</span></ins> below to find out how far!</font></style></b></p>
+<p><b><style="font-family:arial;"><span style="color:Black"><font size="5">Just enter your numbers after steps 2 & 3 and we'll calculate it for you!</font></style></b></p>
+
+<img src="step1.jpg" style="width:20%;height:38px;"><br><br>
+
+<font size="4"><b>The next time you're at a gas station, fill up a <ins>full tank</ins> of gas, and then RESET your trip meter.<br>
+This can usually be done by holding down the little peg next to the display.</b></font>
+<p><font size="4"><b><i>Check your car's owners manual for more information on resetting the trip meter.</i></b></font></p>
+<p><img src="trip_meter_pic.png" width="30%" height="200"></p>
 <br><br>
-<h5><i><center>Click below for useful resources</i></h5>
-  <ul>
-  <li><a href="index.html">Return to Homepage</a></a></li>
-  <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
-  <li><a href='results.html' target="_blank">Find Your Car's Results</a></a></li>
-   <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
-  <li><a href='about.html' target="_blank">About Our Website</a></a></li>
-  <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h5><i><center>Help contribute to the site here:</i></h5>
-  <center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</center>
-  </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br>
-<h5><i><center>Click below for useful resources</i></h5>
-  <ul>
-  <li><a href="index.html">Return to Homepage</a></a></li>
-  <li><a href='calculator.html' target="_blank">Click for Calculator</a></a></li>
-  <li><a href='results.html' target="_blank">Find Your Car's Results</a></a></li>
-   <li><a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Your Results</a></li>
-  <li><a href='about.html' target="_blank">About Our Website</a></a></li>
-  <li><a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Questions? Contact Us</a></li>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h5><i><center>Help contribute to the site here:</i></h5>
-  <center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-</center>
-  </ul>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br>
-</th></tr>
-</table>
-</div>
 
-<div id="section">
+<img src="step2.jpg" style="width:20%;height:38px;"><br><br>
 
-<h3 style="font-family:arial black;"><span style="color:Black">Wondering how many miles your car can go when the gas light comes on?</style></h3>
-<h3 style="font-family:arial black;"><span style="color:Black">Follow the <ins><span style="color:green">simple 3 steps</span></ins> below to find out how far!</style></h3>
-<h3 style="font-family:arial black;"><span style="color:Black">Just enter your numbers after steps 2 & 3 and we'll calculate it for you!</style></h3>
-
-<img src="step1.jpg" width="170" height="38"><br>
-<h3>The next time you're at a gas station, fill up a <ins>full tank</ins> of gas, and then RESET your trip meter.<br>
-This can usually be done by holding down the little peg next to the display.</h3>
-<p><h3><i>Check your car's owners manual for more information on resetting the trip meter.</i></h3></p>
-<p><img src="trip_meter_pic.png" width="330" height="200"></p>
-</p>
-
-<p>
-<img src="step2.jpg" width="170" height="38"><br>
-<h3><ins>When your gas light comes on</ins>, stop at the next gas station and <ins>fill up</ins> your tank again.
+<font size="4"><b><ins>When your gas light comes on</ins>, stop at the next gas station ASAP and <ins>completely fill up</ins> your tank again.
 <p>Divide the <ins># of miles driven since resetting the meter</ins> by the <ins># of gallons you just filled up</ins> (found on the receipt).</p>
-<p>This will give your miles per gallon (MPG) since your last fill up from step 1. See example below:</p></h3>
-<p><img src="633.jpg" width="150" height="100"></p><p><img src="receipt.jpg" width="200" height="150"></p><p><img src="mpg_equation.jpg" width="400" height="150">
-</p>
+<p>This will give your miles per gallon (MPG) since your last fill up from step 1. See example below:</font></p>
+
+<p><img src="633.jpg" width="15%" height="100"></p>
+
+<p><img src="receipt.jpg" width="25%" height="150"></p>
+
+<p><img src="mpg_equation.jpg" width="40%" height="150"></p>
 
 <script>
 function calc(form) {
-var mpgcalc = (form.milesDriven.value / form.gallons.value) * 1;
+var mpgcalc = ((form.milesDriven.value / form.gallons.value) * 1).toFixed(2);
 mpgcalc = twoDecs(mpgcalc);
 form.mpg.value = mpgcalc;
 }
@@ -221,8 +228,30 @@ return eval(parseInt(item * 100) * .01);
 <link href="/style.css" rel="stylesheet" type="text/css">
 <link href="/print.css" rel="stylesheet" type="text/css"  media="print">
 
+<head>
+<style>
+table td, th {
+  border-style: ridge;
+  border-width: 2.5px;
+}
+</head>
+</style>
+
+<head>
+<style>
+table#step1 {
+  width: 32%;
+  background-color: #ffc266;
+  border-style: ridge;
+  border-width: 4px;
+  -webkit-box-shadow: #B3B3B3 6px 6px 6px;
+  -moz-box-shadow:    #B3B3B3 6px 6px 6px;
+  box-shadow:         #B3B3B3 6px 6px 6px;
+</head>
+</style>
+
     <form>
-      <div><table border="2">
+      <div><table id="step1">
         <tr>
           <td>Miles Since Last Fill-Up: </td>
           <td><input type="text" name="milesDriven" size="7"> (miles)</td>
@@ -247,14 +276,18 @@ return eval(parseInt(item * 100) * .01);
 <br>
 <br>
 
-<img src="step3.jpg" width="170" height="38"><br>
-<h3>Lastly, locate your car's <ins>tank capacity</ins> found in your owners manual, usually kept in the glove box.<br>
-<p>Multiply the <ins>MPG</ins> found in step 2 times the difference in your <ins>tank capacity</ins> and <br>the <ins>amount of gallons</ins> filled up since the last trip. Or:</h3></p>
-<p><img src="step_3_equation.jpg" width="400" height="150"></p><p><img src="end_result.jpg" width="400" height="150"></p>
+<img src="step3.jpg" style="width:20%;height:38px;"><br><br>
+
+<font size="4"><b>Lastly, locate your car's <ins>fuel tank capacity</ins> found in your owners manual, usually kept in the glove box.<br>
+<p>Multiply the <ins>MPG</ins> found in step 2 times the difference in your <ins>tank capacity</ins> and <br>the <ins>amount of gallons</ins> filled up since the last trip:</b></font></p>
+
+<p><img src="step_3_equation.jpg" width="40%" height="150"></p>
+
+<p><img src="end_result.jpg" width="40%" height="150"></p>
 
 <script>
 function compute(form) {
-var milesremaining = ((form.tankCapacity.value * 1) - form.gallonsFilled.value) * form.mpg2.value;
+var milesremaining = (((form.tankCapacity.value * 1) - form.gallonsFilled.value) * form.mpg2.value).toFixed(2);
 milesremaining = twoDecs(milesremaining);
 form.result.value = milesremaining;
 }
@@ -268,10 +301,23 @@ return eval(parseInt(item * 100) * .01);
 <link href="/style.css" rel="stylesheet" type="text/css">
 <link href="/print.css" rel="stylesheet" type="text/css"  media="print">
 
+<head>
+<style>
+table#step2 {
+  width: 32%;
+  background-color: #ffc266;
+  border-style: ridge;
+  border-width: 4px;
+  -webkit-box-shadow: #B3B3B3 6px 6px 6px;
+  -moz-box-shadow:    #B3B3B3 6px 6px 6px;
+  box-shadow:         #B3B3B3 6px 6px 6px;
+</head>
+</style>
+
     <form>
-      <div><table border="2">
+      <div><table id="step2">
         <tr>
-          <td>MPG <i>from step #2: </i></td>
+          <td>MPG <i>from step #2</i>:</td>
           <td><input type="text" name="mpg2" size="7"> (miles/gal)</td>
         </tr>
 		<tr>
@@ -295,8 +341,22 @@ return eval(parseInt(item * 100) * .01);
 	</div>
     </form>
 
+<head>
+<style>
+table#lamp {
+  width: 50%;
+  background-color: #ffc266;
+  border-style: ridge;
+  border-width: 4px;
+  -webkit-box-shadow: #B3B3B3 4px 4px 4px;
+  -moz-box-shadow:    #B3B3B3 4px 4px 4px;
+  box-shadow:         #B3B3B3 4px 4px 4px;
+}
+</head>
+</style>
+	
 <br>
-<table class="lamp">
+<table id="lamp">
 <tr>
   <th>
     <img src="lamp.jpg" alt="Note" style="height:32px;width:32px">
@@ -312,9 +372,9 @@ return eval(parseInt(item * 100) * .01);
 <div id="footer">
 <link rel="stylesheet" type="text/css"
   media="screen and (max-device-width: 480px)"
-  href="mycsstest.css"/>
+  href="mycsstest.css" />
 <hr>
-<p><a href="index.html">Return to Homepage</a> | <a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Contact us</a> | <a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Post Your Results</a> | <a href="about.html">About Us</a></p>
+<p><a href="index.html">Return to Homepage</a> | <a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Contact Us</a> | <a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Post Your Results</a> | <a href="about.html">About Us</a></p>
 </div>
 
 </body>
