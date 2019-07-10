@@ -1,24 +1,17 @@
-body {
-    background-color: #FAEBD7;
-}
 #header {
-    background-color: #FAEBD7;
     color:black;
     text-align:right;
 	padding:5px;
-	width: 100%;
+	width:100%;
 }
 #section {
-    background-color: #FAEBD7;
     float:left;
     padding:10px;	 
 	text-align:center;
-	width: 100%;
+	width:100%;
 }
 #footer {
-    background-color: #FAEBD7;
-    text-align:center;
-	font-size: 8px;
+	font-size:10px;
     height:50px;
-	width: 100%;
+	width:100%;
 }
