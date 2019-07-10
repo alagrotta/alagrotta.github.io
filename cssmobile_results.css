@@ -1,4 +1,4 @@
-body {
+#body {
     background-color: #FAEBD7;
 }
 #header {
@@ -22,4 +22,5 @@ body {
     text-align:center;
     height:50px;
 	width: 100%;
+	font-size: 10px;
 }
