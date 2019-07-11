@@ -1,24 +1,15 @@
-#body {
-    background-color: #FAEBD7;
-}
 #header {
-    background-color: #FAEBD7;
-    color:black;
     text-align:right;
 	padding:5px;
 	width: 100%;
 }
 #section {
-    background-color: #FAEBD7;
     float:left;
     padding:10px;	 
 	text-align:center;
 	width: 100%;
 }
 #footer {
-    background-color:black;
-    color:white;
-    clear:both;
     text-align:center;
     height:50px;
 	width: 100%;
