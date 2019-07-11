@@ -24,3 +24,12 @@
 	width: 100%;
 	font-size: 12px;
 }
+table#step1 {
+  width: 75%;
+  background-color: #ffc266;
+  border-style: ridge;
+  border-width: 4px;
+  -webkit-box-shadow: #B3B3B3 6px 6px 6px;
+  -moz-box-shadow:    #B3B3B3 6px 6px 6px;
+  box-shadow:         #B3B3B3 6px 6px 6px;
+}
