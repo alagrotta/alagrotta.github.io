@@ -7,9 +7,6 @@
 <title>Search for your car here to see how many miles are left remaining after the gas light turns on!</title>
 <link rel="shortcut icon" type="image/x-icon" href="icon_transparent.png"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css"
-  media="screen and (max-device-width: 700px)"
-  href="cssmobile_results.css"/>
 </head>
 
 <script>
@@ -52,7 +49,6 @@ body {
 #footer {
     background-color:black;
     color:white;
-    clear:both;
     text-align:center;
     height:50px;	 	 
 }
@@ -61,25 +57,32 @@ body {
 <body>
 
 <div id="header">
-<center><a href="http://www.milesaftergaslight.com/"><img src="newlogo_v2_results.jpg" style="width:99%;height:auto;max-height:300px;border:0" target="_blank"></a></center>
-<small><i>Last updated Sun Sept 1 2019 20:29 EST</i></small><span style="color:AntiqueWhite">....</span>
+
+<center><a href="http://www.milesaftergaslight.com/"><img src="newlogo_v2_results.jpg" style="width:99%;max-height:250px;border:0" target="_blank" class="responsive"></a></center>
+<small><i>Last updated Fri Sept 6 2019 16:28 EST &nbsp&nbsp&nbsp </i></small>
+
+<style>
+@media screen and (max-width: 768px) {
+  img.responsive {height: 175px;}
+  #header {font-size: 12px;}
+}
+</style>
+
 </div>
 
-<div id="section">
-
-<br>
+<div style="margin: 0px; padding:0px; clear: both; height: 6px">&nbsp </div>
 
 <head>
 <style>
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: visible;
-  background-color: #333;
+  background-color: transparent;
   font-size: 13px;
   font-family: Lucida Sans Unicode;
-  line-height:14px;
+  line-height:30px;
 }
 
 li {
@@ -99,10 +102,10 @@ li:last-child {
 }
 
 li a, .dropbtn {
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
-  padding: 12px 14px;
+  padding: 4px 14px;
   text-decoration: none;
 }
 
@@ -115,7 +118,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 li.dropdown {
-  display: inline-block;
+  display: block;
   background-color: #4c4c4c;
 }
 
@@ -126,12 +129,13 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-left: 50px;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
-  text-decoration: underline;
+  padding: 6px 16px;
+  text-decoration: none;
   display: block;
   text-align: left;
 }
@@ -160,31 +164,73 @@ ul {
   background-color: #4c4c4c;
 }
 
-@media screen and (max-width: 600px) {
-  ul li.last-child, ul li.dropdown, .active, 
-  ul li {font-size: 10px;}
+@media screen and (max-width: 768px) {
+  ul li {font-size: 13px;}
+  ul li {float: none;}
+  ul li {line-height: 16px;}
+  ul li {box-shadow: #B3B3B3 3px 3px 3px;}
+  ul li {border: 2px solid #bbb;}
+  ul li {border-style: ridge;}
+  ul li {max-width: 84%;}
+  ul li {margin-left: 8%;}
 }
+
+@media screen and (max-width: 768px) {
+  ul li:last-child,
+  ul li {background-color: transparent;}
+}
+
+@media screen and (max-width: 768px) {
+.dropdown-content {
+  left:50%;
+  margin-left:-32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.dropdown-content a {
+  padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img.paypal {max-height: 30px;}
+  img.paypal {max-width: 85px;}
+}
+
 </style>
 </head>
 
 <ul>
-  <li><a class="unactive" href="http://www.milesaftergaslight.com/"><i class="fa fa-fw fa-home"></i> &nbspHome</a></li>
+  <li><a class="unactive" href="http://www.milesaftergaslight.com/"><i class="fa fa-fw fa-home"></i> &nbspHomepage</a></li>
   <li><a class="active" href="http://www.milesaftergaslight.com/results"><i class="fa fa-bar-chart"></i> &nbspResults Database</a></li>
-  <li><a class="unactive" href="http://www.123formbuilder.com/form-1751717/Post-Your-Results"><i class="fa fa-car"></i> &nbspSubmit My Results</a></li>
-  <li><a class="unactive" href="http://www.milesaftergaslight.com/about"><i class="fa fa-info-circle"></i> &nbspAbout</a></li>
-  <li><a class="unactive" href="http://www.123formbuilder.com/form-1751583/MilesAfterGasLightcom-Contact-Us"><i class="fa fa-fw fa-envelope"></i> &nbspContact Us</a></li>
+  <li><a class="unactive" href="http://www.123formbuilder.com/form-1751717/Post-Your-Results"><i class="fa fa-car"></i> &nbspSubmit Your Results</a></li>
+  <li><a class="unactive" href="http://www.milesaftergaslight.com/about"><i class="fa fa-info-circle"></i> &nbspAbout Us</a></li>
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">More Links &nbsp<i class="fa fa-chevron-circle-down"></i></a>
+    <a href="javascript:void(0)" class="dropbtn">Further Resources&nbsp <i class="fa fa-chevron-circle-down"></i></a>
     <div class="dropdown-content">
-      <a href="http://www.milesaftergaslight.com/calculator">Calculator</a>
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=8KBKBM35QUAZS&item_name=Donate+here+to+help+keep+MilesAfterGasLight.com+running%21&currency_code=USD&source=url">Donate to the Site</a>
-	  <a href="http://www.milesaftergaslight.com/results">Find Your Car's Results</a>
+	  <a href="http://www.123formbuilder.com/form-1751583/MilesAfterGasLightcom-Contact-Us"><i class="fa fa-fw fa-envelope"></i> &nbsp <u>Contact Us</u></a>
+      <a href="http://www.milesaftergaslight.com/calculator"><i class="fa fa-calculator"></i> &nbsp <u>Calculator</u></a>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=8KBKBM35QUAZS&item_name=Donate+here+to+help+keep+MilesAfterGasLight.com+running%21&currency_code=USD&source=url"><i class="fa fa-credit-card-alt"></i> &nbsp <u>Donate to the Site</u></a>
+	  <a href="http://www.milesaftergaslight.com/results"><i class="fa fa-bar-chart"></i> &nbsp <u>Find Your Car's Results</u></a>
 	</div>
   </li>
-  <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=8KBKBM35QUAZS&item_name=Donate+here+to+help+keep+MilesAfterGasLight.com+running%21&currency_code=USD&source=url"><img src="paypal_donate_button.png" style="width:70px;height:30px;border:0" target="_blank" alt="PayPal - The safer, easier way to pay online!" title="PayPal - The safer, easier way to pay online!"></a></li>
+  <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=8KBKBM35QUAZS&item_name=Donate+here+to+help+keep+MilesAfterGasLight.com+running%21&currency_code=USD&source=url"><img src="paypal_donate_button.png" style="width:105px;height:48px;border:0" target="_blank" alt="PayPal - The safer, easier way to pay online!" title="PayPal - The safer, easier way to pay online!" class="paypal"></a></li>
 </ul>
 
-<br><br><br><br><br><br>
+<style>
+@media(max-width: 768px){
+     .page-break br{
+        display:none;
+     }
+}
+</style>
+
+</body>
+
+<div class="page-break"><br><br></div>
+
+<br><br>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Banner/Horizontal Ad -->
@@ -1932,9 +1978,16 @@ table#result {
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<style>
+@media screen and (max-width: 768px) {
+  #footer {font-size: 10px;}
+  #footer {height: 34px;}
+}
+</style>
+
 <div id="footer">
 <hr>
-<p><a href="index.html">Return to Homepage</a> | <a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Contact Us</a> | <a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Post Your Results</a> | <a href="about.html">About</a></p>
+<p><a href="index.html">Home</a>&nbsp | &nbsp <a href="results.html">Find Your Car</a>&nbsp | &nbsp <a href="http://www.123contactform.com/form-1751717/Post-Your-Results" class="blueLink13">Submit Results</a>&nbsp | &nbsp <a href="about.html">About Us</a>&nbsp | &nbsp <a href="http://www.123contactform.com/form-1751583/MilesAfterGasLightcom-Contact-Us" class="blueLink13">Contact Us</a></p>
 </div>
 
 </body>
