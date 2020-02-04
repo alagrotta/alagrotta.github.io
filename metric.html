@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Description" content="Use this website to calculate how many miles are left remaining and how far your car can go after the gas or fuel light in your car comes on. Just plug in a few numbers and we'll calculate it for you!">
-<meta name="keywords" content="how, far, car, go, travel, miles, remaining, gallons, after, gas, fuel, light, on, out, gas light, tank, empty, distance">
+<meta name="Description" content="Use this website to calculate how many kilometers are left remaining and how far your car can go after the gas or fuel light in your car comes on. Just plug in a few numbers and we'll calculate it for you!">
+<meta name="keywords" content="how, far, car, go, travel, kilometers, remaining, liters, after, gas, fuel, light, on, out, gas light, tank, empty, distance">
 <head>
-<title>Welcome to MilesAfterGasLight.com: Use this website to calculate how many miles are left remaining and how far your car can go after the gas light in your car comes on!</title>
+<title>Welcome to MilesAfterGasLight.com: Use this website to calculate how many kilometers are left remaining and how far your car can go after the gas light in your car comes on!</title>
 <link rel="shortcut icon" type="image/x-icon" href="icon_transparent.png"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -59,7 +59,7 @@ body {
 <div id="header">
 
 <center><a href="http://www.milesaftergaslight.com/"><img src="newlogo_v2.jpg" style="width:99%;max-height:250px;border:0" target="_blank" class="responsive"></a></center>
-<small><i>Last updated Mon, Feb 3 2020 20:44 EST &nbsp&nbsp&nbsp </i></small>
+<small><i>Last updated Mon, Feb 3 2020 20:53 EST &nbsp&nbsp&nbsp </i></small>
 
 <style>
 @media screen and (max-width: 768px) {
@@ -255,11 +255,11 @@ div.a {
 </script>
 
 <div class="a">
-<h2 style="font-family:arial black;font-size:20px;"><span style="color:black">Wondering how many miles your car can go after the gas light comes on?</style></h2>
+<h2 style="font-family:arial black;font-size:20px;"><span style="color:black">Wondering how many kilometers your car can go after the gas light comes on?</style></h2>
 <h2 style="font-family:arial black;font-size:20px;"><span style="color:black">Follow these <ins><span style="color:green">three simple steps</span></ins> below to find out how far!</style></h2>
 <h2 style="font-family:arial black;font-size:20px;"><span style="color:black">Crunch the numbers yourself, or just enter your info after steps 2 & 3 and we'll calculate it for you!</style></h2>
-<font size="3"><b>You are currently viewing this page in English Units. To view this page in Metric Units, just click below:
-<p><a href="http://www.milesaftergaslight.com/metric"><button>Switch to Metric Units</button></a></b></font></p>
+<font size="3"><b>You are currently viewing this page in Metric Units. To view this page in English Units, just click below:
+<p><a href="http://www.milesaftergaslight.com/"><button>Switch to English Units</button></a></b></font></p>
 </div>
 
 <br>
@@ -290,15 +290,15 @@ div.a {
 
 <div class="a">
 <font size="4"><b>When your <ins>gas light comes on</ins>, stop at the next gas station ASAP and <ins>completely fill up</ins> your tank again.
-<p>Divide the <ins># of miles driven</ins> since resetting the trip meter by the <ins># of gallons</ins> you just filled up (found on the receipt).</p>
-<p>This will give you your car's miles per gallon (MPG) since you last filled up your tank. Example below:</font></p>
+<p>Divide the <ins># of kilometers driven</ins> since resetting the trip meter by the <ins># of liters</ins> you just filled up (found on the receipt).</p>
+<p>This will give you your car's kilometers per liter (km/L) since you last filled up your tank. Example below:</font></p>
 </div>
 
 <p><img src="633.jpg" width="15%" height="100"></p>
 
-<p><img src="receipt.jpg" width="25%" height="150"></p>
+<p><img src="receipt_metric.jpg" width="25%" height="150"></p>
 
-<p><img src="mpg_equation.jpg" width="50%" height="188"></p>
+<p><img src="kml_equation.jpg" width="50%" height="188"></p>
 
 <script>
 function calc(form) {
@@ -337,24 +337,25 @@ table#step1 {
 
     <form>
       <div><table id="step1">
-          <td>Miles Since Last Fill-Up: </td>
-          <td><input type="text" name="milesDriven" size="7"> (miles)</td>
+        <tr>
+          <td>Kilometers Since Last Fill-Up: </td>
+          <td><input type="text" name="milesDriven" size="7"> (kilometers)</td>
         </tr>
         <tr>
-          <td>Gallons Filled at Station: </td>
-          <td><input type="text" name="gallons" size="7"> (gal)</td>
+          <td>Liters Filled at Station: </td>
+          <td><input type="text" name="gallons" size="7"> (liters)</td>
         </tr>
         <tr>
-          <td colspan="2" align="center"><input type="button" value="Calculate My MPG!" onClick="calc(this.form)"></td>
+          <td colspan="2" align="center"><input type="button" value="Calculate My km/L!" onClick="calc(this.form)"></td>
         </tr>
         <tr>
           <td>Answer: <input type="text" name="mpg" size="7"></td>
-          <td>Miles Per Gallon (mpg)</td>
+          <td>Kilometers Per Liter (km/L)</td>
         </tr>
           <td colspan="2" align="center"><input type="reset" value="Reset Form"></td>
         </tr>
 		<tr>
-		  <td colspan="2"><center>Want to use Metic Units instead? &nbsp <a href="http://www.milesaftergaslight.com/metric"><button>Switch to Metric Units</button></a>
+		  <td colspan="2"><center>Want to use English Units instead? &nbsp <a href="http://www.milesaftergaslight.com/"><button>Switch to English Units</button></a>
         <tr>
       </table>
 	</div>
@@ -378,17 +379,17 @@ table#step1 {
 
 <div class="a">
 <font size="4"><b>Lastly, locate your car's <ins>fuel tank capacity</ins>. This can be found in your owner's manual, which is usually kept in the glove box.<br>
-<p>Multiply the <ins>MPG</ins> found in step #2 times the difference in your <ins>tank capacity</ins> and the <ins>number of gallons</ins> you just filled up:</b></font></p>
+<p>Multiply the <ins>km/L</ins> found in step #2 times the difference in your <ins>tank capacity</ins> and the <ins>number of liters</ins> you just filled up:</b></font></p>
 </div>
 
-<p><img src="tank_capacity.jpg" style="width:55%;height:auto;max-height:250px;"></p>
+<p><img src="tank_capacity_metric.jpg" style="width:55%;height:auto;max-height:250px;"></p>
 
-<img src="step_3_equation.jpg" width="50%" height="150">
+<img src="step_3_equation_metric.jpg" width="50%" height="150">
 
-<img src="end_result.jpg" width="50%" height="150">
+<img src="end_result_metric.jpg" width="50%" height="150">
 
 <div class="a">
-<font size="4"><b>So in this example, once the gas light comes on there are about <ins>66.8 miles remaining</ins> until the tank is empty!</b></font></p>
+<font size="4"><b>So in this example, once the gas light comes on there are about <ins>117 kilometers remaining</ins> until the tank is empty!</b></font></p>
 </div>
 
 <script>
@@ -420,28 +421,28 @@ table#step2 {
     <form>
       <div><table id="step2">
         <tr>
-          <td>MPG <i>from step #2</i>:</td>
-          <td><input type="text" name="mpg2" size="7"> (miles/gal)</td>
+          <td>km/L <i>from step #2</i>:</td>
+          <td><input type="text" name="mpg2" size="7"> (km/L)</td>
         </tr>
 		<tr>
           <td>Tank Capacity: </td>
-          <td><input type="text" name="tankCapacity" size="7"> (gal)</td>
+          <td><input type="text" name="tankCapacity" size="7"> (liters)</td>
         </tr>
         <tr>
-          <td>Gallons Filled at Station: </td>
-          <td><input type="text" name="gallonsFilled" size="7"> (gal)</td>
+          <td>Liters Filled at Station: </td>
+          <td><input type="text" name="gallonsFilled" size="7"> (liters)</td>
         </tr>
         <tr>
           <td colspan="2" align="center"><input type="button" value="Calculate My Result!" onClick="compute(this.form)"></td>
         </tr>
         <tr>
           <td>Answer: <input type="text" name="result" size="7"></td>
-          <td><b>Miles After Gas Light!</b></td>
+          <td><b>Kilometers After Gas Light!</b></td>
         </tr>
           <td colspan="2" align="center"><input type="reset" value="Reset Form"></td>
         </tr>
 		<tr>
-		  <td colspan="2"><center>Want to use Metic Units instead? &nbsp <a href="http://www.milesaftergaslight.com/metric"><button>Switch to Metric Units</button></a>
+		  <td colspan="2"><center>Want to use English Units instead? &nbsp <a href="http://www.milesaftergaslight.com/"><button>Switch to English Units</button></a>
         <tr>
       </table>
 	</div>
